@@ -1,0 +1,12 @@
+<h2>Passer une Commande</h2>
+<form (ngSubmit)="placeOrder()">
+  <label>
+    ID du Produit:
+    <input type="number" [(ngModel)]="order.productId" name="productId" required />
+  </label>
+  <label>
+    Quantité:
+    <input type="number" [(ngModel)]="order.quantity" name="quantity" required />
+  </label>
+  <button type="submit">Commander</button>
+</form>
